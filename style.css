@@ -5,12 +5,65 @@
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
+    height: 100vh;
+    width: 100vw;
 }
 
 * {
     box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    height: 100%;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    width: 40%;
+    padding-top: 15rem;
+    position: relative;
+}
+
+.logo-capture {
+    color: aliceblue;
+    font-family: Norse-Bold;
+    font-size: 5rem;
+}
+
+.black-background {
+    height: 20%;
+    background-color: rgba(0, 0, 0, 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 7rem
+}
+
+.credits {
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+}
+
+.credits > a{
+    color: inherit;
+    
+}
+
+main {
+    width: 60%;
 }
