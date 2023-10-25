@@ -68,8 +68,54 @@ img {
 
 main {
     width: 60%;
+    height: 100%;
 }
 
 article {
-    background-color: ;
+    background-color: rgba(218, 238, 228, 0.212);
+    padding: 4rem 3rem;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+.pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+label {
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+
+input {
+    height: 1.5em;
+}
+
+
+button {
+    background-color: #596D48;
+    border-radius: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem 2.5rem;
+}
+
+#logIn_link {
+    text-decoration: none;
+    color: #596D48;
 }
