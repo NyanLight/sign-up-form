@@ -69,10 +69,11 @@ img {
 main {
     width: 60%;
     height: 100%;
+    background-color: rgba(218, 238, 228, 0.212);
 }
 
 article {
-    background-color: rgba(218, 238, 228, 0.212);
+   
     padding: 4rem 3rem;
 }
 
@@ -93,7 +94,8 @@ h3 {
 .inputs {
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 2rem; 
+    width: 50rem;
 }
 
 label {
@@ -104,6 +106,7 @@ label {
 
 input {
     height: 1.5em;
+    width: 20rem;
 }
 
 
@@ -118,4 +121,17 @@ button {
 #logIn_link {
     text-decoration: none;
     color: #596D48;
+}
+
+
+
+.main_block {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 2rem;
+    margin: auto;
 }
