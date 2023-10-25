@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(assets/Norse-Bold.otf);
+}
+
 html {
     font-size: 62.5%;
 }
