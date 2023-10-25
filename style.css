@@ -36,7 +36,7 @@ body {
 }
 
 .logo-capture {
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.61);
     font-family: Norse-Bold;
     font-size: 8rem;
 }
@@ -50,7 +50,8 @@ body {
 }
 
 img {
-    height: 13rem
+    height: 13rem;
+    opacity: 0.6;
 }
 
 .credits {
@@ -105,17 +106,21 @@ label {
 }
 
 input {
-    height: 1.5em;
+    height: 2em;
     width: 20rem;
+    appearance: none;
+    border: 1px rgb(216, 216, 216) solid;
 }
 
 
 button {
     background-color: #596D48;
-    border-radius: 1rem;
+    border: 0px;
+    border-radius: 0.5rem;
+    box-shadow: rgb(156, 154, 154) 2px 2px 5px;
     color: aliceblue;
     font-size: 2rem;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 4rem;
 }
 
 #logIn_link {
@@ -124,10 +129,10 @@ button {
 }
 
 
-
 .main_block {
     background-color: rgb(255, 255, 255);
-    padding: 2rem;
+    box-shadow: rgb(197, 195, 195) 0px 5px 20px;
+    padding: 1rem 0 4rem 4rem;
     margin-bottom: 2rem;
 }
 
