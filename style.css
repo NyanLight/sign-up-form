@@ -121,6 +121,12 @@ input:not(:focus):invalid {
   border: 2px solid rgb(252, 21, 4);
 }
 
+input:not(:focus):invalid + span::after {
+  color: red;
+  padding-left: 2px;
+  content: ' *Correct email required';
+}
+
 button {
   background-color: #596d48;
   border: 0px;
