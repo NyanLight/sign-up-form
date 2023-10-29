@@ -131,6 +131,10 @@ button {
   padding: 0.5rem 4rem;
 }
 
+button:active {
+  transform: scale(0.9);
+}
+
 #logIn_link {
   text-decoration: none;
   color: #596d48;
