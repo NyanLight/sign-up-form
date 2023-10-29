@@ -5,8 +5,12 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
-  width: 100%;
+}
+
+html,
+body,
+.background {
+  min-height: 100vh;
 }
 
 * {
@@ -17,14 +21,12 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: row;
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
 
 .background {
-  height: 100%;
   background-image: url(assets/background.jpg);
   background-size: cover;
   width: 40%;
@@ -66,7 +68,7 @@ img {
 
 main {
   width: 60%;
-  height: 100%;
+  min-height: 100%;
   background-color: rgba(218, 238, 228, 0.212);
 }
 
@@ -106,6 +108,17 @@ input {
   width: 20rem;
   appearance: none;
   border: 1px rgb(216, 216, 216) solid;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+input:focus {
+  border: 2px solid rgba(37, 92, 243, 0.836);
+  outline: none;
+}
+
+input:not(:focus):invalid {
+  border: 2px solid rgb(252, 21, 4);
 }
 
 button {
