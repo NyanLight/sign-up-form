@@ -25,11 +25,11 @@
                     <div class="inputs">
                         <div class="pair">
                             <label for="firstName" >FIRST NAME</label>
-                            <input type="text" name="firstName" id="firstName">
+                            <input type="text" name="firstName" id="firstName" pattern="[a-zA-z]+">
                         </div>
                         <div class="pair">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" name="lastName" id="lastName">
+                            <input type="text" name="lastName" id="lastName"  pattern="[a-zA-z]+">
                         </div>
                         <div class="pair">
                             <label for="email">EMAIL</label>
@@ -38,15 +38,16 @@
                         </div>
                         <div class="pair">
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input type="tel" name="phoneNumber" id="phoneNumber">
+                            <input type="tel" name="phoneNumber" id="phoneNumber" >
                         </div>
                         <div class="pair">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" minlength="5" maxlength="20">
                         </div>
                         <div class="pair">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword" id="confirmPassword">
+                            <input type="password" name="confirmPassword" id="confirmPassword" minlength="5" maxlength="20">  
+                            <span id="validation"></span>
                         </div>
                 </div>
                 </div>     
@@ -56,5 +57,22 @@
                 </div>  
         </form>
     </main>
+    <script>
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const validation = document.getElementById('validation');
+
+        confirmPassword.addEventListener('focusout', () => {
+            if (password.value === confirmPassword.value) {
+                validation.textContent = "Passwords are matched.";
+                validation.style.color = 'green';
+            } else {
+                console.log(password.value);
+                console.log(confirmPassword.value);
+                validation.textContent = 'Passwords did not match.';
+                validation.style.color = 'red';
+            }
+        })
+    </script>
 </body>
 </html>
